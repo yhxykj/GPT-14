@@ -1,0 +1,120 @@
+PODS:
+  - Alamofire (5.8.1)
+  - AlamofireImage (4.3.0):
+    - Alamofire (~> 5.8)
+  - HandyJSON (5.0.2)
+  - IQKeyboardManager (6.5.16)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.6)
+  - ObjectMapper (4.2.0)
+  - SAMKeychain (1.5.3)
+  - SDWebImage (5.18.8):
+    - SDWebImage/Core (= 5.18.8)
+  - SDWebImage/Core (5.18.8)
+  - SKPhotoBrowser (7.1.0)
+  - SnapKit (5.6.0)
+  - SocketRocket (0.7.0)
+  - Starscream (4.0.6)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
+  - SwiftKeychainWrapper (4.0.1)
+  - SwiftyStoreKit (0.16.1)
+  - TOCropViewController (2.6.1)
+  - YBImageBrowser (3.0.9):
+    - YBImageBrowser/Core (= 3.0.9)
+  - YBImageBrowser/Core (3.0.9):
+    - SDWebImage (>= 5.0.0)
+    - YYImage
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+  - ZKProgressHUD (5.1.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - HandyJSON
+  - IQKeyboardManager
+  - MBProgressHUD
+  - MJRefresh
+  - ObjectMapper
+  - SAMKeychain
+  - SDWebImage
+  - SKPhotoBrowser
+  - SnapKit
+  - SocketRocket
+  - Starscream
+  - SVProgressHUD
+  - SwiftKeychainWrapper
+  - SwiftyStoreKit
+  - TOCropViewController
+  - YBImageBrowser
+  - YYImage (from `https://github.com/QiuYeHong90/YYImage.git`)
+  - YYWebImage
+  - ZKProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - HandyJSON
+    - IQKeyboardManager
+    - MBProgressHUD
+    - MJRefresh
+    - ObjectMapper
+    - SAMKeychain
+    - SDWebImage
+    - SKPhotoBrowser
+    - SnapKit
+    - SocketRocket
+    - Starscream
+    - SVProgressHUD
+    - SwiftKeychainWrapper
+    - SwiftyStoreKit
+    - TOCropViewController
+    - YBImageBrowser
+    - YYCache
+    - YYWebImage
+    - ZKProgressHUD
+
+EXTERNAL SOURCES:
+  YYImage:
+    :git: https://github.com/QiuYeHong90/YYImage.git
+
+CHECKOUT OPTIONS:
+  YYImage:
+    :commit: 4164acb76e8979c0612530bd874e099a1fa51e9d
+    :git: https://github.com/QiuYeHong90/YYImage.git
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  AlamofireImage: 843953fa97bee5f561cf05d83abd759e590b068d
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  IQKeyboardManager: 024b54d7dcb765c5bc99882cb4d5ea24a8cb7c3c
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDWebImage: a81bbb3ba4ea5f810f4069c68727cb118467a04a
+  SKPhotoBrowser: cd95b95a6f352fc2a50992721299f75ead77f9ab
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
+  Starscream: fb2c4510bebf908c62bd383bcf05e673720e91fd
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+  TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
+  YBImageBrowser: 7ecc8bf33ffa5f3b94c397c29b4f3638dd37f527
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 20ec986d18a8d0ad421619d166a9e628097e2433
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+  ZKProgressHUD: af9e9929c6935587da382bf23d31b4e995b8c229
+
+PODFILE CHECKSUM: 4c9a6a386a0ed15cf061bce8ea8f887da6094a79
+
+COCOAPODS: 1.15.2
