@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainHeaderView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="142"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页选项背景" translatesAutoresizingMaskIntoConstraints="NO" id="rDc-IN-YI8">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="142"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swj-Fh-Ckj">
+                    <rect key="frame" x="12" y="16" width="366" height="90"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AI对话" translatesAutoresizingMaskIntoConstraints="NO" id="uTW-KC-L0A">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="90"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="uTW-KC-L0A" firstAttribute="top" secondItem="Swj-Fh-Ckj" secondAttribute="top" id="Ghx-2p-tZR"/>
+                        <constraint firstAttribute="height" constant="90" id="TeU-nb-OJO"/>
+                        <constraint firstItem="uTW-KC-L0A" firstAttribute="leading" secondItem="Swj-Fh-Ckj" secondAttribute="leading" id="Ytt-2L-DAI"/>
+                        <constraint firstAttribute="trailing" secondItem="uTW-KC-L0A" secondAttribute="trailing" id="n43-36-EG9"/>
+                        <constraint firstAttribute="bottom" secondItem="uTW-KC-L0A" secondAttribute="bottom" id="v1N-be-Leq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="rDc-IN-YI8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Qn-ld-4OI"/>
+                <constraint firstAttribute="trailing" secondItem="rDc-IN-YI8" secondAttribute="trailing" id="50g-OD-eQG"/>
+                <constraint firstItem="Swj-Fh-Ckj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Alb-69-DFi"/>
+                <constraint firstAttribute="trailing" secondItem="Swj-Fh-Ckj" secondAttribute="trailing" constant="12" id="CWA-bl-Cnh"/>
+                <constraint firstItem="rDc-IN-YI8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Fzo-Nd-oDf"/>
+                <constraint firstItem="Swj-Fh-Ckj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="XiT-KC-1Fa"/>
+                <constraint firstAttribute="bottom" secondItem="rDc-IN-YI8" secondAttribute="bottom" id="z9z-AH-dZg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.76923076923077" y="237.44075829383885"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AI对话" width="362" height="90"/>
+        <image name="首页选项背景" width="390" height="211"/>
+    </resources>
+</document>

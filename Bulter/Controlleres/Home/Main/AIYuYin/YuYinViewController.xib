@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YuYinViewController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="LSm-it-qjX" id="alc-Hx-fiz"/>
+                <outlet property="home_Image" destination="ahK-Ub-Uh7" id="4LV-AY-DCk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTopLayout" destination="KMZ-OX-agQ" id="naR-Co-Bfo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="编组 3" translatesAutoresizingMaskIntoConstraints="NO" id="ahK-Ub-Uh7">
+                    <rect key="frame" x="93.666666666666686" y="50" width="203" height="203"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="203" id="An6-tN-Vh7"/>
+                        <constraint firstAttribute="width" constant="203" id="ypT-nr-TBE"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="选择喜欢的AI" translatesAutoresizingMaskIntoConstraints="NO" id="q3l-fq-i28">
+                    <rect key="frame" x="107.66666666666669" y="270" width="175" height="194"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="194" id="1kR-QK-cBz"/>
+                        <constraint firstAttribute="width" constant="175" id="XZ1-Bb-uun"/>
+                    </constraints>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LSm-it-qjX">
+                    <rect key="frame" x="0.0" y="304" width="390" height="95"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="95" id="YWG-fs-18f"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c9O-Ve-ojq">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kEN-HX-RJP"/>
+                        <outlet property="delegate" destination="-1" id="dA3-Zo-HJW"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afu-D8-IbG">
+                    <rect key="frame" x="73.666666666666686" y="692" width="243" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="开启语音"/>
+                    <connections>
+                        <action selector="Begin:" destination="-1" eventType="touchUpInside" id="CHY-R9-g5z"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="q3l-fq-i28" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="067-BY-TeF"/>
+                <constraint firstItem="LSm-it-qjX" firstAttribute="top" secondItem="ahK-Ub-Uh7" secondAttribute="bottom" constant="51" id="7rX-11-Zoz"/>
+                <constraint firstItem="ahK-Ub-Uh7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="KMZ-OX-agQ"/>
+                <constraint firstItem="Afu-D8-IbG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VNw-Hg-kVG"/>
+                <constraint firstItem="ahK-Ub-Uh7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WOr-Yj-o4H"/>
+                <constraint firstItem="q3l-fq-i28" firstAttribute="top" secondItem="ahK-Ub-Uh7" secondAttribute="bottom" constant="17" id="Xbb-JN-Wf0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Afu-D8-IbG" secondAttribute="bottom" constant="64" id="fL9-mF-lqI"/>
+                <constraint firstItem="LSm-it-qjX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ycC-q9-0uG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LSm-it-qjX" secondAttribute="trailing" id="zGw-C5-h21"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="开启语音" width="243" height="54"/>
+        <image name="编组 3" width="203" height="203"/>
+        <image name="选择喜欢的AI" width="175" height="194"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

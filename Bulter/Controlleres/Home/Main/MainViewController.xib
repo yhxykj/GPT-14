@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="KhH-zn-9nz" id="QY9-Y1-ArR"/>
+                <outlet property="titleImage" destination="aZF-ay-fdt" id="LJ1-SC-MvO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="104.61538461538461" y="-12.085308056872037"/>
+        </view>
+        <view contentMode="scaleToFill" id="KhH-zn-9nz">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页选项背景" translatesAutoresizingMaskIntoConstraints="NO" id="kih-Pt-FUm">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="120"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TP2-RV-e0a">
+                    <rect key="frame" x="12" y="16" width="366" height="90"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AI对话" translatesAutoresizingMaskIntoConstraints="NO" id="aZF-ay-fdt">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="90"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F52-6w-DAB">
+                            <rect key="frame" x="0.0" y="0.0" width="122" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="mGG-AQ-wCW"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="titleClick:" destination="-1" eventType="touchUpInside" id="Iv1-Xc-muh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdC-vB-vxA">
+                            <rect key="frame" x="244" y="0.0" width="122" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="YAE-xh-bRT"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="titleClick:" destination="-1" eventType="touchUpInside" id="ohd-bv-Dla"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK5-a2-I13">
+                            <rect key="frame" x="122" y="0.0" width="122" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="u2i-14-M47"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="titleClick:" destination="-1" eventType="touchUpInside" id="9ii-U2-Vsg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="38N-2r-BuJ"/>
+                        <constraint firstItem="FK5-a2-I13" firstAttribute="width" secondItem="F52-6w-DAB" secondAttribute="width" id="6B7-SK-YoQ"/>
+                        <constraint firstItem="FK5-a2-I13" firstAttribute="leading" secondItem="F52-6w-DAB" secondAttribute="trailing" id="EVU-Uw-Nrw"/>
+                        <constraint firstItem="vdC-vB-vxA" firstAttribute="top" secondItem="TP2-RV-e0a" secondAttribute="top" id="Fgb-c7-jz5"/>
+                        <constraint firstItem="aZF-ay-fdt" firstAttribute="top" secondItem="TP2-RV-e0a" secondAttribute="top" id="G3k-dG-377"/>
+                        <constraint firstItem="vdC-vB-vxA" firstAttribute="leading" secondItem="FK5-a2-I13" secondAttribute="trailing" id="HoH-8L-xTP"/>
+                        <constraint firstAttribute="trailing" secondItem="aZF-ay-fdt" secondAttribute="trailing" id="Itc-CE-huq"/>
+                        <constraint firstItem="FK5-a2-I13" firstAttribute="centerX" secondItem="TP2-RV-e0a" secondAttribute="centerX" id="UVG-49-r1u"/>
+                        <constraint firstAttribute="trailing" secondItem="vdC-vB-vxA" secondAttribute="trailing" id="Vnb-aF-dlK"/>
+                        <constraint firstItem="F52-6w-DAB" firstAttribute="leading" secondItem="TP2-RV-e0a" secondAttribute="leading" id="a6O-8D-ElY"/>
+                        <constraint firstItem="vdC-vB-vxA" firstAttribute="width" secondItem="F52-6w-DAB" secondAttribute="width" id="j9E-s7-ycg"/>
+                        <constraint firstItem="F52-6w-DAB" firstAttribute="top" secondItem="TP2-RV-e0a" secondAttribute="top" id="lYG-Eh-Rjz"/>
+                        <constraint firstItem="aZF-ay-fdt" firstAttribute="leading" secondItem="TP2-RV-e0a" secondAttribute="leading" id="qE4-Rq-5eu"/>
+                        <constraint firstItem="FK5-a2-I13" firstAttribute="top" secondItem="TP2-RV-e0a" secondAttribute="top" id="u80-NU-jJR"/>
+                        <constraint firstAttribute="bottom" secondItem="aZF-ay-fdt" secondAttribute="bottom" id="w9H-c6-w9F"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="tCY-OB-pn3"/>
+            <constraints>
+                <constraint firstItem="tCY-OB-pn3" firstAttribute="trailing" secondItem="kih-Pt-FUm" secondAttribute="trailing" id="1bA-aB-pcY"/>
+                <constraint firstItem="TP2-RV-e0a" firstAttribute="leading" secondItem="tCY-OB-pn3" secondAttribute="leading" constant="12" id="APR-FM-XVf"/>
+                <constraint firstItem="kih-Pt-FUm" firstAttribute="top" secondItem="KhH-zn-9nz" secondAttribute="top" id="JlO-Kz-QcY"/>
+                <constraint firstAttribute="bottom" secondItem="kih-Pt-FUm" secondAttribute="bottom" id="TBz-rB-97l"/>
+                <constraint firstItem="kih-Pt-FUm" firstAttribute="leading" secondItem="tCY-OB-pn3" secondAttribute="leading" id="jxW-iU-BzH"/>
+                <constraint firstItem="TP2-RV-e0a" firstAttribute="top" secondItem="KhH-zn-9nz" secondAttribute="top" constant="16" id="xYE-V9-kaw"/>
+                <constraint firstItem="tCY-OB-pn3" firstAttribute="trailing" secondItem="TP2-RV-e0a" secondAttribute="trailing" constant="12" id="yId-0c-615"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="801.53846153846155" y="300"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AI对话" width="362" height="90"/>
+        <image name="首页选项背景" width="390" height="211"/>
+    </resources>
+</document>

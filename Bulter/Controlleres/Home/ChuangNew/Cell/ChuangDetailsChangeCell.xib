@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChuangDetailsChangeCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pdz-a4-2ky">
+                        <rect key="frame" x="15" y="42.666666666666657" width="313" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO3-gx-bHE">
+                                <rect key="frame" x="21" y="21" width="233" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vie-n9-Edo">
+                                <rect key="frame" x="269" y="19" width="44" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="IZ8-dm-NHE"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="向下"/>
+                                <connections>
+                                    <action selector="down:" destination="gTV-IL-0wX" eventType="touchUpInside" id="cD8-lb-NE6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.97254901960784312" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dO3-gx-bHE" firstAttribute="centerY" secondItem="Pdz-a4-2ky" secondAttribute="centerY" id="5lM-g7-B6S"/>
+                            <constraint firstItem="Vie-n9-Edo" firstAttribute="leading" secondItem="dO3-gx-bHE" secondAttribute="trailing" constant="15" id="68O-85-1jX"/>
+                            <constraint firstItem="Vie-n9-Edo" firstAttribute="centerY" secondItem="Pdz-a4-2ky" secondAttribute="centerY" id="DCN-ic-jj0"/>
+                            <constraint firstAttribute="trailing" secondItem="Vie-n9-Edo" secondAttribute="trailing" id="UIg-eu-27k"/>
+                            <constraint firstAttribute="height" constant="60" id="XWQ-my-12K"/>
+                            <constraint firstItem="dO3-gx-bHE" firstAttribute="leading" secondItem="Pdz-a4-2ky" secondAttribute="leading" constant="21" id="bnW-B5-fzg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Pdz-a4-2ky" secondAttribute="trailing" constant="15" id="c31-bY-31Q"/>
+                <constraint firstItem="Pdz-a4-2ky" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="w8G-W2-0Pp"/>
+                <constraint firstItem="Pdz-a4-2ky" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="zOZ-kg-Fn2"/>
+            </constraints>
+            <size key="customSize" width="343" height="145"/>
+            <connections>
+                <outlet property="labeel" destination="dO3-gx-bHE" id="5bp-Dz-86s"/>
+            </connections>
+            <point key="canvasLocation" x="254.61538461538461" y="-39.454976303317537"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="向下" width="15" height="8"/>
+    </resources>
+</document>
