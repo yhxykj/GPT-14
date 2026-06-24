@@ -1,0 +1,11 @@
+.DS_Store
+build/
+DerivedData/
+Pods/
+*.xcuserstate
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
